@@ -1,5 +1,5 @@
 import * as React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import {
   Select,
   SelectContent,
@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { Card } from '@/components/ui/card'
+// import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Plus, Trash2 } from 'lucide-react'
 
@@ -26,18 +26,18 @@ export default function QuestionEditor() {
     { id: 1, type: 'categorize' }
   ])
   
-  const handleSubmit = async () => {
-    try {
-      const response = await axios.post('http://your-api-url/forms', {
-        questions: questions, // Send the questions array
-      });
-      console.log('Response:', response.data);
-      // Handle success (e.g., show a success message, reset form, etc.)
-    } catch (error) {
-      console.error('Error submitting questions:', error);
-      // Handle error (e.g., show an error message)
-    }
-  };
+  // const handleSubmit = async () => {
+  //   try {
+  //     const response = await axios.post('http://your-api-url/forms', {
+  //       questions: questions, // Send the questions array
+  //     });
+  //     console.log('Response:', response.data);
+  //     // Handle success (e.g., show a success message, reset form, etc.)
+  //   } catch (error) {
+  //     console.error('Error submitting questions:', error);
+  //     // Handle error (e.g., show an error message)
+  //   }
+  // };
 
   const handleQuestionTypeChange = (value: QuestionType, questionId: number) => {
     setQuestions(prevQuestions =>

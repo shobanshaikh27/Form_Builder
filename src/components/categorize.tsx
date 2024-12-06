@@ -71,7 +71,7 @@ function SortableItem({ id, children }: { id: string; children: React.ReactNode 
   )
 }
 
-export default function Categorize({ sendDataToParent }) {
+export default function Categorize({ sendDataToParent }: any ) {
   const [categories, setCategories] = React.useState<Category[]>([])
   const [items, setItems] = React.useState<Item[]>([])
   const [newCategory, setNewCategory] = React.useState('')

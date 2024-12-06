@@ -25,7 +25,7 @@ export default function FormEditor() {
   const [formName, setFormName] = useState('');
   const [formElements, setFormElements] = useState([]);
 
-  const handleDataChange = (data) => {
+  const handleDataChange = (data: any) => {
     console.log("Updating formElements with:", data);
     setFormElements(data);
   };

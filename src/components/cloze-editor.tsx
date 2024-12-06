@@ -248,7 +248,7 @@ export default function ClozeEditor() {
     }
   };
 
-  const handleInput = (e: React.FormEvent<HTMLDivElement>) => {
+  const handleInput = () => {
     if (editorRef.current) {
       const newContent = editorRef.current.innerHTML;
       setContent(newContent);
