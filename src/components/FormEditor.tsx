@@ -7,10 +7,10 @@ import ClozeEditor from './cloze-editor'
 import Categorize from './categorize'
 import { useEffect, useState } from 'react'
 // import axios from 'axios';
-import useAxiosPrivate from '../hooks/useAxiosPrivate';
-import { useMutation } from '@tanstack/react-query';
-import { useParams } from 'react-router-dom';
-import toast from 'react-hot-toast'
+// import useAxiosPrivate from '../hooks/useAxiosPrivate';
+// import { useMutation } from '@tanstack/react-query';
+// import { useParams } from 'react-router-dom';
+// import toast from 'react-hot-toast'
 
 type Question = {
   id: string; // Add an id field

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Grid, X, GripVertical } from 'lucide-react'
+import {  X, GripVertical } from 'lucide-react'
 import {
   DndContext,
   DragEndEvent,
