@@ -4,6 +4,7 @@
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
+    "incremental": true, // Add this line
     "skipLibCheck": true,
 
     /* Bundler mode */
@@ -18,7 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    // "noUncheckedSideEffectImports": true
   },
   "include": ["vite.config.ts"]
 }
